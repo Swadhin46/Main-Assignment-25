@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #f6f9fc;
+}
+
+.container {
+    width: 83%;
+    margin: auto;
+}
+
+.section1 {
+    padding: 45px 0 60px;
+    text-align: center;
+}
+
+.section1 .subtitle {
+    text-transform: uppercase;
+    color: #0d6efd;
+    font-size: 14.5px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.section1 .title {
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 7px;
+    color: #222;
+}
+
+.section1 .title::before {
+    content: '';
+    position: absolute;
+    top: 20.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 3.3%;
+    height: 2px;
+    background: #0d6efd;
+}
+
+.section1 p {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: #989ea5;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+.section1 .card-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 .card-row .card {
+    width: 32.1%;
+    background: #fff;
+    padding: 50px 94px;
+    transition: all .5s;
+}
+
+.card-row .card h3 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    transition: all .3s;
+}
+
+.card-row .card .dollar {
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 75px;
+    position: relative;
+    transition: all .3s;
+}
+
+.card-row .card .dollar::before {
+    content: '';
+    position: absolute;
+    top: 165%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+.card-row .card ul {
+    list-style: none;
+}
+
+.card-row .card ul li {
+    font-size: 16.4px;
+    color: #989ea5;
+    letter-spacing: .3px;
+    margin: 10px 0;
+}
+
+.card-row .card .button {
+    background: #0d6efd;
+    padding: 5.5px 19px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 22px;
+    margin-top: 8px;
+    display: inline-block;
+    transition: all .5s;
+    position: relative;
+    border: 1px solid transparent;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-row .card .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #0d6efd;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.card-row .card .button:hover::before {
+    width: 100%;
+}
+
+.card-row .card .button:hover {
+    color: #fff !important;
+}
+
+.card-row .card:hover {
+    background: #0d6efd;
+    color: #fff !important;
+}
+
+.card-row .card:hover ul li {
+    color: #fff;
+}
+
+.card-row .card:hover .button {
+    background: #fff;
+    color: #0d6efd;
+    border-color: #fff;
+}
+
+/* Section 2 */
+
+.section2 {
+    background-image: linear-gradient(#0d6dfdd0, #0d6dfdd0), url(./free-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 485px;
+    text-align: center;
+    padding: 130px 0;
+    color: #fff;
+}
+
+.section2 h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    width: 35%;
+    margin: 8px auto 24px;
+    line-height: 32px;
+    font-weight: 500;
+    position: relative;
+}
+
+.section2 h1::before {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10%;
+    height: 1px;
+    background: #fff;
+}
+
+.section2 p {
+    line-height: 22px;
+}
+
+.section2 .button {
+    background: #fff;
+    padding: 8.5px 23px;
+    text-decoration: none;
+    color: #0d6efd;
+    border-radius: 22px;
+    margin-top: 30px;
+    display: inline-block;
+    transition: all .5s;
+    position: relative;
+    border: 1px solid transparent;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.section2 .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #0d6efd;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.section2 .button:hover::before {
+    width: 100%;
+}
+
+.section2 .button:hover {
+    color: #fff;
+}
+
+/* Section 3 */
+
+.section3 {
+    padding: 70px 0 60px;
+}
+
+.section3 .container {
+    width: 79%;
+    margin: auto;
+}
+
+.section3 .box-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box-row .box1 {
+    width: 63%;
+    background: #0d6efd;
+    border-radius: 5px;
+    padding: 45px 40px;
+    color: #fff;
+    height: 233px;
+}
+
+.box-row .box1 h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.box-row .box1 p {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.box-row .box1 input[type="email"] {
+    padding: 3px 16px;
+    background: #fff;
+    border-radius: 18px;
+    border: none;
+    font-size: 17px;
+}
+
+.box-row .box1 input[type="email"]:focus {
+    outline: none;
+}
+
+.box-row .box1 input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: 1px solid #fff;
+    padding: 3px 12px;
+    font-size: 16.5px;
+    color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.box-row .box2 {
+    width: 33%;
+    box-shadow: 0 0 10px 2px #ccc;
+    background: #fff;
+    padding: 25px 40px;
+    height: auto;
+}
+
+.box-row .box2 h3 {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.box-row .box2 .button {
+    padding: 3.5px 17px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 80px;
+}
